@@ -35,6 +35,7 @@ cat > %{profile_rbenv_script_filename} <<END_OF_RBENV_PROFILE
 #
 export PATH="/opt/%{name}/bin:\$PATH"
 eval "\$(rbenv init -)"
+export RBENV_ROOT=/opt/rbenv
 END_OF_RBENV_PROFILE
 chmod a+x %{profile_rbenv_script_filename}
 
