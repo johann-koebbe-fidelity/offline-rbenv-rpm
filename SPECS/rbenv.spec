@@ -33,7 +33,7 @@ install -m 0755 -d %{system_profile_directory}
 cat > %{profile_rbenv_script_filename} <<END_OF_RBENV_PROFILE
 # rbenv path update and initialisation
 #
-export PATH="/opt/%{name}/bin:\$PATH"
+export PATH="/opt/%{name}/bin:/opt/%{name}/shims:\$PATH"
 eval "\$(rbenv init -)"
 export RBENV_ROOT=/opt/rbenv
 END_OF_RBENV_PROFILE
