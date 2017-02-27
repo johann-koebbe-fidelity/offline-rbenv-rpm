@@ -1,13 +1,13 @@
 Name:     	rbenv
-Version:  	0.4.0
-Release:  	2%{?dist:%{dist}}
+Version:  	1.1.0
+Release:  	1%{?dist:%{dist}}
 Group: 	  	Applications/System
 Summary:  	The rbenv program for running multiple Ruby instances.
 BuildArch: 	noarch
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 License:  	MIT
 URL:      	https://github.com/sstephenson/rbenv    
-Source0: 	rbenv-0.4.0.tar.gz
+Source0: 	rbenv-1.1.0.tar.gz
 BuildRequires:	redhat-rpm-config
 
 %description
